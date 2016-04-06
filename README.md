@@ -1,4 +1,4 @@
-ProperJS App
+Chester Berries Current.
 =================
 
 > A modular micro-framework for modern web apps.
