@@ -1,7 +1,7 @@
 import * as core from "../core";
 
 
-// const _transTime = core.util.getTransitionDuration( core.dom.intro[ 0 ] );
+const _transTime = core.util.getTransitionDuration( core.dom.intro[ 0 ] );
 
 
 /**
@@ -24,15 +24,15 @@ const intro = {
     teardown () {
         core.dom.intro.removeClass( "is-active" );
 
-        // setTimeout( () => {
-        //     core.dom.intro.remove();
+        setTimeout( () => {
+            core.dom.intro.remove();
 
-        //     setTimeout( () => {
-        //         core.emitter.fire( "app--intro-art" );
+            setTimeout( () => {
+                core.emitter.fire( "app--intro-art" );
 
-        //     }, 0 );
+            }, 0 );
 
-        // }, _transTime );
+        }, _transTime );
     }
 };
 

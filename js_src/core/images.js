@@ -96,7 +96,7 @@ const images = {
      *
      */
     handleImages ( $images, callback ) {
-        $images = ($images || dom.page.find( config.lazyImageSelector ));
+        $images = ($images || dom.body.find( config.lazyImageSelector ));
 
         if ( $images.length ) {
             const imageController = new ImageController( $images );
